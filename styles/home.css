@@ -1,0 +1,15 @@
+h1 {
+	padding-top: 25%;
+	text-align: center;
+}
+
+#me {
+	background-color: blue;
+}
+
+.far {
+	font-size: 23px;
+	position: relative;
+	top: 2px;
+	width: 27px;
+}
