@@ -1,0 +1,47 @@
+.navbar {
+	box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.2);
+	font-family: 'Lato';
+}
+
+.navbar .navbar-brand {
+	
+}
+
+.navbar .nav-item {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	padding-left: 12px;
+}
+
+.navbar .nav-link {
+	text-transform: uppercase;
+}
+
+.navbar .nav-item .dropdown-menu {
+	text-transform: capitalize;
+	font-size: 14px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.navbar .iconfont {
+	font-size: 18px;
+	position: relative;
+	top: 2px;
+}
+
+.nav-item:nth-of-type(2) .dropdown-menu .iconfont {
+	position: relative;
+	top: 2px;
+}
+
+.far {
+	font-size: 23px;
+	position: relative;
+	top: 2px;
+	width: 27px;
+}
+
+.copyright {
+	
+}
