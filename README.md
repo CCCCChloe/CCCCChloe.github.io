@@ -1,2 +1,2 @@
 # CCCCChloe.github.io
-my portfolio website
+Personal Website
