@@ -189,7 +189,7 @@
 	text-align: left;
 }
 
-.row {
+.GI {
 	margin-top: 50px;
 	padding: 20px 0px 20px 0px;
 	border: 1px dashed grey;
@@ -207,5 +207,109 @@ video{
 }
 iframe{
 	width: 100%;
-	height: 200vh;
+	height: 255vh;
+	display:block;
+}
+
+.searchAndBasket {
+	background-color: #1a1a1a;
+	padding-bottom: 50px;
+}
+.searchAndBasket .title {
+	font-family: 'Oswald';
+	padding-bottom: 20px;
+	text-align: center;
+	color: white;
+}
+.searchAndBasket p {
+	font-family: 'Roboto';
+	text-align: center;
+	color: grey;
+}
+.searchbar {
+	margin-bottom: 20px;
+}
+.searchAndBasket .left {
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-right: 20px;
+	border: 1px dashed grey;
+	border-radius: 25px;
+}
+.searchAndBasket .left .eachline {
+	padding-top: 10px;
+}
+.searchAndBasket .left .eachline .btn {
+	margin-right: 5px;
+}
+
+.searchAndBasket .right {
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-right: 20px;
+	border: 1px dashed grey;
+	border-radius: 25px;
+}
+.searchAndBasket .right .eachline {
+	padding-top: 10px;
+}
+.searchAndBasket .right .eachline .btn {
+	margin-right: 5px;
+}
+#element1 {display:inline-block;margin-right:10px;} 
+#element2 {display:inline-block;}
+
+/* show and hide function */
+#data {
+	display: none;
+}
+#broccoli1 {
+	display: none;
+}
+#spinach1 {
+	display: none;
+}
+#kale1 {
+	display: none;
+}
+#collards1 {
+	display: none;
+}
+#califlower1 {
+	display: none;
+}
+#potatoes1 {
+	display: none;
+}
+#carrots1 {
+	display: none;
+}
+#cucumbers1 {
+	display: none;
+}
+#greenbean1 {
+	display: none;
+}
+#artichokes1 {
+	display: none;
+}
+#tomatoes1 {
+	display: none;
+}
+#redpeppers1 {
+	display: none;
+}
+#asparagus1 {
+	display: none;
+}
+#beetroot1 {
+	display: none;
+}
+#eggplants1 {
+	display: none;
+}
+#okra1 {
+	display: none;
 }
