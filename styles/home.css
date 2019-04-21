@@ -49,7 +49,7 @@
 
 
 .welcome {
-	font-family: "Roboto";
+	font-family: 'Raleway', sans-serif;
 	padding-top: 30%;
 }
 
@@ -71,9 +71,17 @@
 	overflow: hidden;
 	white-space: nowrap;
 	/* border-right: 5px solid lightgrey; */
-	letter-spacing: 0.05em;
-	
+	/* letter-spacing: 0.02em;	 */
 }
+
+.css-typing p:nth-child(3) {
+	/* letter-spacing: 0.02em;	 */
+}
+
+.css-typing p:nth-child(4) {
+	/* letter-spacing: 0.02em;	 */
+}
+
 
 /* The typing effect */
 @keyframes type {
@@ -120,9 +128,91 @@
 }
 
 .copyright {
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
+	font-size: 0.8em;
+	color: #808080;
+	/* letter-spacing: 0.1em; */
 }
+
 
 .project01 {
 	width: 100%;
+}
+
+
+
+
+/* Works part */
+.works {
+	font-family: 'Raleway', sans-serif;
+	height: 600px;
+	background-color: black;
+	font-family: 'Raleway', sans-serif;
+}
+
+.works .more {
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	margin-top: 15%;
+}
+
+.col:hover {
+	background-color: #20B2AA;
+}
+
+
+/* Blog text */
+.blog_intro {
+	font-family: 'Raleway', sans-serif;
+	height: 700px;
+	padding-top: 300px;
+
+}
+
+
+/* Blog part */
+.blog {
+	font-family: 'Raleway', sans-serif;
+	height: 600px;
+	background-color: black;
+}
+
+/* Contact me */
+.contact {
+	font-family: 'Lato';
+	height: 650px;
+	padding-top: 200px;
+	text-align: center;
+}
+
+.contact p:nth-child(1) {
+	font-size: 1.3em;
+	letter-spacing: 0.3em;
+	color: #808080;
+}
+
+.contact p:nth-child(3) {
+	font-family: 'Raleway', sans-serif;
+}
+
+.contact p:nth-child(4) {
+	font-family: 'Raleway', sans-serif;
+}
+
+.contact .icon {
+	margin-top: 50px;
+}
+
+.contact .icon1 {
+	padding-right: 35px;
+}
+
+.contact .icon2 {
+	padding-right: 35px;
+}
+
+hr {
+	width: 100px;
 }
