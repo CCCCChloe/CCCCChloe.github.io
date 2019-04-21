@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diabetes Diet Plan Visualized</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500|Roboto:300,400,700" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href="./legend.css">
+	<script src="script.js"></script>
+	
+	
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <a class="navbar-brand" href="#">Pacific Vis</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#intro">Intro<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#video">Video</a>
+	  </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#foodMatters">Food Matters!</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#visualization" tabindex="-1" aria-disabled="true">Visualization</a>
+	  </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron" id="intro">
+  <h1 class="display-4">Diabetes Diet Plan Visualized</h1>
+  <p class="lead">				Are you constantly asking yourself, "What can I eat?" It's time to stop worrying! Today we want to tell you a story about <strong>FOOD.</strong><br/><br>Living with diabetes doesn't have to mean feeling deprived. We'll help you learn to balance your meals and make the healthiest food choices.
+
+	Once you get the hang of eating a healthy diet, you can relax and dig in to a wide variety of delicious meals and snacks.
+
+	A great way to get started is with our special <a href="images/Comic.pdf" download="Food_comic_book"><span class="affect"><u>Diabetes Diet Plan Visualized. </u></span></a><br><br> Recommended browsers: Chrome, Firefox.</p>
+</div>
+
+<div class="video" id="video">
+	<video src="images/PacificVis.mp4" controls></video>
+</div>
+
+<div class="section1">
+	<div class="container">
+		<h3 class="title" id="foodMatters">The Secret of Food</h3>
+		<div class="content">
+			<p>
+				The food we eat gives our bodies the "information" and materials they need to function properly. If we don't get the right information, our metabolic processes suffer and our health declines. What we eat is central to our health. Consider that in light of Webster's definition of medicine:
+			</p>
+			<p>
+				<strong><u>"The science and art dealing with the maintenance of health and the prevention, alleviation, or cure of disease."</u></strong>
+			</p>
+			<p>
+				To reveal the secret of food, we collect the nutrition data of <span class="number">93</span> types of food which include coconut oil, butter, honey, and etc.
+			</p>
+			<div class="food-icon">
+				<img src="https://img.icons8.com/ios/50/000000/healthy-eating.png">
+				<img src="https://img.icons8.com/ios/50/000000/vegetarian-food.png">
+				<img src="https://img.icons8.com/ios/50/000000/seafood.png">
+				<img src="https://img.icons8.com/ios/50/000000/orange.png">
+				<img src="https://img.icons8.com/ios/50/000000/mayonnaise.png">
+				<img src="https://img.icons8.com/ios/50/000000/rice-bowl.png">
+				<img src="https://img.icons8.com/ios/50/000000/strawberry.png">
+				<img src="https://img.icons8.com/ios/50/000000/cheese.png">
+				<img src="https://img.icons8.com/ios/50/000000/citrus.png">
+				<img src="https://img.icons8.com/ios/50/000000/eggs.png">
+			</div>
+			<div class="food-icon">
+				<img src="https://img.icons8.com/ios/50/000000/corn.png">
+				<img src="https://img.icons8.com/ios/50/000000/cherry.png">
+				<img src="https://img.icons8.com/ios/50/000000/whole-fish.png">
+				<img src="https://img.icons8.com/ios/50/000000/mushroom.png">
+				<img src="https://img.icons8.com/ios/50/000000/peas.png">
+				<img src="https://img.icons8.com/ios/50/000000/eggplant.png">
+				<img src="https://img.icons8.com/ios/50/000000/dragon-fruit.png">
+				<img src="https://img.icons8.com/ios/50/000000/steak-well-done.png">
+				<img src="https://img.icons8.com/ios/50/000000/sweet-potato.png">
+				<img src="https://img.icons8.com/ios/50/000000/wheat.png">
+			</div>
+			<p>......</p>
+			<hr>
+		</div>
+	</div>
+</div>
+
+<div class="section2">
+	<div class="container">
+		<h3 class="title">Food & Health</h3>
+		<div class="content">
+			<p>
+				Since different food contain different levels of nutrition, our body will be affected by the food we eat everyday. Food can contribute to our <span class="affect">skin</span>, <span class="affect">eyes</span>, <span class="affect">brain</span>, <span class="affect">digestion</span>, <span class="affect">anti-aging</span>, <span class="affect">strong muscles</span>, <span class="affect">immune system</span>, <span class="affect">heart</span>, and <span class="affect">lower cholesterol</span>.
+			</p>
+			<!-- <ul class="list-group">
+			  <li class="list-group-item">Green tea</li>
+			  <li class="list-group-item">Coconut oil</li>
+			  <li class="list-group-item">Butter</li>
+			  <li class="list-group-item">Shea butter</li>
+			  <li class="list-group-item">Avocado</li>
+			  <li class="list-group-item">Honey</li>
+			  <li class="list-group-item">Olive oil</li>
+			  <li class="list-group-item">Argan oil</li>
+			  <li class="list-group-item">Lemons</li>
+			  <li class="list-group-item">Tumeric</li>
+			  <li class="list-group-item">Almond oil</li>
+			  <li class="list-group-item">Almond</li>
+			  <li class="list-group-item">Grape seed oil</li>
+			  <li class="list-group-item">Roman Chamomile</li>
+			  <li class="list-group-item">Seaweed</li>
+			  <li class="list-group-item">Pumpkin</li>
+			  <li class="list-group-item">Cocoa butter</li>
+			  <li class="list-group-item">Apples</li>
+			  <li class="list-group-item">Walnut</li>
+			  <li class="list-group-item">Kiwis</li>
+			  <li class="list-group-item">Potatoes</li>
+			</ul> -->
+		</div>
+
+		<div class="bubble">
+			<div class="bubble">
+				<img data-toggle="popover" data-trigger="hover" title="Brain" data-content="Fatty fish; Coffee; Blueberries; Turmeric; Broccoli; Pumpkin seeds; Dark chocolate; Nuts; Oranges; Eggs; Green tea" class="bubble-item" src="svg/brain.svg" height="120px"/>
+
+				<img data-toggle="popover" data-trigger="hover" title="Eyes" data-content="Tuna; Salmon; Trout; Mackerel; Sardines; Anchovies; Walnuts; Brazil nuts; Cashews; Peanuts; Lentils; Chia seeds; Flax eeds; Hemp seeds; Lemons; Oranges; Grapefruits; Spinach; Kale; Collards; Carrots; Sweet potatos; Beef; Eggs; Water" class="bubble-item" src="svg/eyes.svg" height="120px"/>
+
+				<img data-toggle="popover" data-trigger="hover" title="Skin" data-content="Green tea; Coconut oil; Butter; Shea butter; Avocado; Honey; Olive oil; Argan oil; Lemons; Tumeric; Almond oil; Almond; Grape seed oil; Roman Chamomile; Seaweed; Pumpkin; Cocoa butter; Apples; Walnut; Kiwis; Potatoes" class="bubble-item" src="svg/skin.svg" height="120px"/>
+
+				<img data-toggle="popover" data-trigger="hover" title="Digestion" data-content="Ginger; Chia seed; Papaya; Yogurt; Apples; Kombucha; Bananas; Whole grain; Broth; Kimchi; Avocado; Peppermint; Broccoli; Cucumbers; Sweet potatos; Split pea; Fennel bulbs; Berries; Kefir; Lentil; Green bean; Black turtle bean; Dairy products; Beans; Artichokes; Fish; Seurkraut; Tomatoes; Coconut oil" class="bubble-item" src="svg/digestion.svg" height="120px"/>
+
+				<img data-toggle="popover" data-trigger="hover" title="Anti-aging" data-content="Blueberry; Green tea; Avocado; Broccoli; Watermelon; Nut; Pomegrante; Red wine; Dark chocolate; Sweet potatoes; Carrot; Sesame; Yogurt; Spinach; Saffron; Oranges; Tomatoes; Salmon; Strawberry; Parsley; Dark chocolate; Kimchi; Eggs; Tumeric; Oatmeal; Olive oil; Coconut oil; Garlic" class="bubble-item" src="svg/anti-aging.svg" height="120px"/>
+			</div>
+
+			<div class="bubble">
+				<img data-toggle="popover" data-trigger="hover" title="Strong muscle" data-content="Eggs; Salmon; Chicken breast; Greek yogurt; Tuna; Lean beaf; Shrimp; Soybeans; Cottage; cheese; Turkey breast; Tilapia; Beans; Edamame; Quinoa; Scallops; Lean jerky; Chickpeas; Peanuts" class="bubble-item" src="svg/strong muscle.svg" height="120px"/>
+
+				<img data-toggle="popover" data-trigger="hover" title="Immune system" data-content="Yogurt; Ginger; Broccoli; Spinach; Almond; Oyster; Sweet potatoes; Green tea; Apples; Sunflower seed; Fatty fish; Nut; Eggs; Blueberry; Watermelon; Oranges; Fennel bulbs; Miso; Berries; Dark chocolate; Kefir; Wheat gem oil; Grapefruit; Lemons; Garlic; Chicken soup; Turmeric; Peppers" class="bubble-item" src="svg/immune system.svg" height="120px"/>
+
+				<img data-toggle="popover" data-trigger="hover" title="Heart" data-content="Walnut; Dark chocolate; Blueberry; Whole grain; Almond; Berries; Nut; Salmon; Coffee; Broccoli; Legume; Green tea; Avocado; Tomatoes; Beans; Red wine; Apples; Asparagus; Sweet potatoes; Oranges; Beetroot; Liver; Chocolate; Raisin; Oatmeal; Olive oil" class="bubble-item" src="svg/heart.svg" height="120px"/>
+
+				<img data-toggle="popover" data-trigger="hover" title="Lower cholesterol" data-content="Oats; Barley and other grains; Beans; Eggplants; Okra; Nuts; Vegetable oils; Apples; Grapes; Strawberries; Oranges; Grapefruits; Soy; Fatty fish" class="bubble-item" src="svg/lower cholesterol.svg" height="120px"/>
+			</div>
+
+			<p>......</p>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<div class="section3">
+	<div class="container">
+		<h3 class="title">Food & Disease</h3>
+		<div class="content">
+			<p>
+				If we get too much food, or food that gives our bodies the wrong instructions, we can become overweight, undernourished, and at risk for the development of diseases and conditions, such as <span class="affect">arthritis</span>, <span class="affect">heart disease</span>, and <span class="affect">diabetes</span>.
+			</p>
+			<h5><i>Type2 Diabetes</i></h5>
+			<p>
+				Type2 diabetes is a key health concern worldwide. The reports finds that as of 2018, 9.4 percent of people are living with type2 diabetes.
+				<br>Type2 diabetes is thought to result from both lifestyle factors and genetic factors. The risk factors appear to include: excess body fat, high blood glucose and pressure, and unhealthy diet.
+			</p>
+
+			<div class="row GI">
+			    <div class="col-4">
+			    	<img src="images/gi.jpg">
+			    </div>
+			    <div class="col-8">
+			    	<strong class="whatisgi">Glycemic Index and Diabetes</strong>
+					<p class="left-align">
+						The glycemic index(GI) measures how food raises blood glucose. A food with a high GI raises bllod glucose more than a food with a low or medium GI.Carbohydrate is an essential part of our diets, but not all carbohydrate foods are equal. The Glycemic Index (GI) is a relative ranking of carbohydrate in foods according to how they affect blood glucose levels. Carbohydrates with a low GI value (55 or less) are more slowly digested, absorbed and metabolised and cause a lower and slower rise in blood glucose and, therefore usually, insulin levels.
+					</p>
+					<p class="left-align">
+						For the whole day the GI classifications are:
+					</p>
+					<li class="left-align">Low: 45 or less</li>
+					<li class="left-align">Moderate: 46-59</li>
+					<li class="left-align">High: 60+</li>
+			    </div>
+			</div>			
+		</div>
+	</div>
+</div>
+
+<!-- searchBox -->
+<div class="searchAndBasket" style="background-color:#1A1A1A">
+	<div class="container">
+		<h3 class="title">Balance Your Meal</h3>
+		<p>
+			Use search function to find your favorite food and add it to your basket on the right 'to check GI level'
+		</p>
+		
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col left">
+				<div>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search your food" aria-label="Search">
+						<button id="show" value="Show Data" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+					</form>
+				</div>	
+				<p class="searchhint"><font color="lightgreen"><b>Hint!</b></font> Try keywords <u>vegetable</u>, <u>fruit</u>, <u>seafood</u> ...</p>
+				<div id="data">
+					<div class="eachline">
+							<button id="broccoli" type="button" class="btn btn-light">Broccoli</button>
+							<button id="spinach" type="button" class="btn btn-light">Spinach</button>
+							<button id="kale" type="button" class="btn btn-light">Kale</button>
+							<button id="collards" type="button" class="btn btn-light">Collards</button>
+							<button id="califlower" type="button" class="btn btn-light">Califlower</button>
+					</div>
+					<div class="eachline">
+							<button id="potatoes" type="button" class="btn btn-light">Potatoes</button>
+							<button id="carrots" type="button" class="btn btn-light">Carrots</button>
+							<button id="cucumbers" type="button" class="btn btn-light">Cucumbers</button>
+							<button id="greenbean" type="button" class="btn btn-light">Green bean</button>
+					</div>
+					<div class="eachline">
+							<button id="artichokes" type="button" class="btn btn-light">Artichokes</button>
+							<button id="tomatoes" type="button" class="btn btn-light">Tomatoes</button>
+							<button id="redpeppers" type="button" class="btn btn-light">Red peppers</button>
+							<button id="asparagus" type="button" class="btn btn-light">Asparagus</button>
+					</div>
+					<div class="eachline">
+							<button id="beetroot" type="button" class="btn btn-light">Beetroot</button>
+							<button id="eggplants" type="button" class="btn btn-light">Eggplants</button>
+							<button id="okra" type="button" class="btn btn-light">Okra</button>
+					</div>
+					
+				</div>
+			</div>
+			<div class="col right">
+				<div>
+					<div id="element2">
+							<div class="progress" style="height: 15px; width: 280px;">
+									<div class="progress-bar bg-success" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Low</div>
+									<div class="progress-bar bg-warning" role="progressbar" style="width: 34%" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100">Medium</div>
+									<div class="progress-bar bg-danger" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">High</div>
+							</div>
+					</div>
+					<button id="element1" class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="toggle_div_fun('sectiontohide');">Check Food GI level</button>
+				</div>
+				<p class="searchhint"><b>Hint!</b> Try keywords <u>vegetable</u>, <u>fruit</u>, <u>seafood</u> ...</p>
+				<div>
+					<div class="eachline">
+							<button id="broccoli1" type="button" class="btn btn-light btn-outline-secondary">Broccoli</button>
+							<button id="spinach1" type="button" class="btn btn-light btn-outline-secondary">Spinach</button>
+							<button id="kale1" type="button" class="btn btn-light btn-outline-secondary">Kale</button>
+							<button id="collards1" type="button" class="btn btn-light btn-outline-secondary">Collards</button>
+							<button id="califlower1" type="button" class="btn btn-light btn-outline-secondary">Califlower</button>
+					</div>
+					<div class="eachline">
+							<button id="potatoes1" type="button" class="btn btn-light btn-outline-secondary">Potatoes</button>
+							<button id="carrots1" type="button" class="btn btn-light btn-outline-secondary">Carrots</button>
+							<button id="cucumbers1" type="button" class="btn btn-light btn-outline-secondary">Cucumbers</button>
+							<button id="greenbean1" type="button" class="btn btn-light btn-outline-secondary">Green bean</button>
+					</div>
+					<div class="eachline">
+							<button id="artichokes1" type="button" class="btn btn-light btn-outline-secondary">Artichokes</button>
+							<button id="tomatoes1" type="button" class="btn btn-light btn-outline-secondary">Tomatoes</button>
+							<button id="redpeppers1" type="button" class="btn btn-light btn-outline-secondary">Red peppers</button>
+							<button id="asparagus1" type="button" class="btn btn-light btn-outline-secondary">Asparagus</button>
+					</div>
+					<div class="eachline">
+							<button id="beetroot1" type="button" class="btn btn-light btn-outline-secondary">Beetroot</button>
+							<button id="eggplants1" type="button" class="btn btn-light btn-outline-secondary">Eggplants</button>
+							<button id="okra1" type="button" class="btn btn-light btn-outline-secondary">Okra</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section-legend">
+	<div class="container">
+		<h3 class="title">More Information</h3>
+		<div class="content">
+			<p>
+				Hover over or click on each line, cup and semicircle to explore!
+			</p>
+			</div>			
+		</div>
+	</div>
+
+<div class="legend-wrapper">
+		<!-- <iframe id="testimonials" name="testimonials" src="https://yoursite.co.uk/singlerowlist.php"; allowtransparency="true" onload="this.style.height=(this.contentDocument.body.scrollHeight+45) +'px';" scrolling="no" style="width:100%;border:none;"></iframe> -->
+		<!-- <iframe allowTransparency="true" style="background: #1A1A1A;" class="legend" src="http://lynnhan.me/pacific_legend/" frameborder="0" scrolling="no"></iframe> -->
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 742.8 360"><defs></defs><title>Legend_1.1</title><g id="Layer_7" data-name="Layer 7"><rect class="cls-1" width="742.8" height="335" style="fill: #1A1A1A"/></g>
+			<g id="Layer_1" data-name="Layer 1">
+			<path class="cls-2" data-toggle="popover" title="3 oz Food Category" data-trigger="hover" data-content="Tuna, Salmon, Trout, Mackerel, Anchovies, Beef, Eggs, Chicken Breast, Shrimp, Turkey Breast, Tilapia, Scallops, Oyster" d="M347.49,149.24H326.55a1.71,1.71,0,0,0-1.83,2.14c.9,5.89,5.3,20,6.23,22.74.72,2.16,2,4.54,4.51,4.54h21.93c4.31,0,5.7-2.75,7.21-8.44,1.57-5.92,3.16-8.58,4.59-14.54a2.59,2.59,0,0,1,2.52-2h10.91a1.91,1.91,0,0,0,1.91-1.92v-2.55Z"/>
+			<path class="cls-3" d="M363.48,152.71h-32c-2.52,0-2.15,2.41-2,3.18.59,3.65,4,13.48,5.61,16.93.83,1.87,3.6,1.94,5.38,2,2.58.08,4.68,0,7,0h8.44c3.67,0,4.11-2.1,5.95-7.91,1.46-4.62,2.86-6.23,3.63-11C365.63,155.11,366,152.71,363.48,152.71Z"/>
+			<path class="cls-2" data-toggle="popover" title="1 oz Food Category" data-trigger="hover" data-content="Almond, Walnuts, Cashews, Peanuts, Lentils, Chia Seeds, Pumpkin Seeds, Dark Chocolate, Kimchi, Beans" d="M361.29,128c.46-1.2,1.32-2.79,2.52-2.79H382a1.92,1.92,0,0,0,1.92-1.92v-1.74h-54a1.7,1.7,0,0,0-1.83,2.14c0,.24,4.47,12.06,4.47,12.06.6,1.3,1.45,4.27,3.88,4.27h17.1c1.91,0,3.16-1.76,3.65-3.21C357.25,136.59,361.29,128,361.29,128Z"/>
+			<path class="cls-3" d="M356.54,124.66c-4,0-7.69.07-11.43.08H334c-1.64,0-1.41,1.16-1.32,1.53a80.34,80.34,0,0,0,3,9.15c.43,1.23,1,1.52,1.8,1.52h15.31c.79,0,1.37-.29,1.8-1.52,1.06-3.07,2.6-6,3.3-9.22C358,125.82,358.19,124.66,356.54,124.66Z"/>
+			<path class="cls-2" data-toggle="popover" title="1 cup Food Category" data-trigger="hover" data-content="Avocado, Seaweed, Pumpkin, Apples, Kiwis, Potatoes, Lemons, Oranges, Grapefruits, Spinach, Kale, Collards, Carrots, Sweet Potatoes, Coffee, Blueberries, Broccoli, Green Tea, Papaya, Yougurt, Bananas, Cucumbers, Strawberries, Green bean, Artichokes, Tomatoes, Waatermelon, Pomegrante, Red wine, Oatmeal, Soybeans, Edamame, Quinoa, Red peppers, Pineapple, Raspberries, Asparagus, Beetroot, Barley, Eggplants, Okra, Grapes" d="M353.62,188.64H326.89c-1.08,0-3.21.27-2.78,2.57.33,1.71,3.62,20.75,4.61,27.15,1.19,6,3.22,9.47,8.91,9.47H360c.29,0,5.9,0,7.39-7.07,1.34-6.33,5-24.44,5-24.44s.23-1.2.34-1.69a2.09,2.09,0,0,1,2-1.59h7.72c.86,0,1.54-1.51,1.54-2.36v-2.05Z"/><path class="cls-3" d="M366.26,192.77H331.39c-2.41,0-2,2.66-2,2.66s2.92,17.45,4.22,24.2c.7,3.63,5,4.23,7,4.23h15.19c2.52,0,6.8-.94,7.57-5,1.61-8.54,4.85-23.59,4.85-23.59S368.62,192.77,366.26,192.77Z"/><text class="cls-4" transform="translate(338.08 210.04)">1 cup</text>
+			<text class="cls-4" transform="translate(338.75 165.66)">3 oz</text>
+			<text class="cls-4" transform="translate(336.75 133.21)">1 oz</text>
+	<path class="cls-5" d="M552.26,234.85a6.29,6.29,0,0,0-6.29,6.29h12.57A6.29,6.29,0,0,0,552.26,234.85Z"/>
+	<path class="cls-6" d="M552.26,234.85a6.29,6.29,0,0,0-6.29,6.29h12.57A6.29,6.29,0,0,0,552.26,234.85Z"/>
+	<path class="cls-5" d="M552.26,229.38a11.77,11.77,0,0,0-11.76,11.76H564A11.77,11.77,0,0,0,552.26,229.38Z"/>
+	<path class="cls-6" d="M552.26,229.38a11.77,11.77,0,0,0-11.76,11.76H564A11.77,11.77,0,0,0,552.26,229.38Z"/>
+	<path class="cls-5" d="M552.26,224a17.12,17.12,0,0,0-17.11,17.11h34.22A17.13,17.13,0,0,0,552.26,224Z"/><path class="cls-6" d="M552.26,224a17.12,17.12,0,0,0-17.11,17.11h34.22A17.13,17.13,0,0,0,552.26,224Z"/>
+	<path class="cls-5" d="M552.26,218.81a22.35,22.35,0,0,0-22.33,22.33h44.66A22.35,22.35,0,0,0,552.26,218.81Z"/><path class="cls-6" d="M552.26,218.81a22.35,22.35,0,0,0-22.33,22.33h44.66A22.35,22.35,0,0,0,552.26,218.81Z"/>
+	<path class="cls-5" d="M552.26,213a28.13,28.13,0,0,0-28.1,28.11h56.2A28.14,28.14,0,0,0,552.26,213Z"/><path class="cls-6" d="M552.26,213a28.13,28.13,0,0,0-28.1,28.11h56.2A28.14,28.14,0,0,0,552.26,213Z"/><path class="cls-5" d="M552.25,208.23a33,33,0,0,0-32.9,32.91h65.81A32.94,32.94,0,0,0,552.25,208.23Z"/><path class="cls-6" d="M552.25,208.23a33,33,0,0,0-32.9,32.91h65.81A32.94,32.94,0,0,0,552.25,208.23Z"/><path class="cls-5" d="M552.25,202.91A38.27,38.27,0,0,0,514,241.14h76.46A38.28,38.28,0,0,0,552.25,202.91Z"/><path class="cls-6" d="M552.25,202.91A38.27,38.27,0,0,0,514,241.14h76.46A38.28,38.28,0,0,0,552.25,202.91Z"/><path class="cls-5" d="M552.25,197.65a43.53,43.53,0,0,0-43.47,43.49h87A43.54,43.54,0,0,0,552.25,197.65Z"/><path class="cls-5" d="M552.33,191.8a49.47,49.47,0,0,0-49.49,49.34h99A49.47,49.47,0,0,0,552.33,191.8Z"/><path class="cls-6" d="M552.25,197.65a43.53,43.53,0,0,0-43.47,43.49h87A43.54,43.54,0,0,0,552.25,197.65Z"/><path class="cls-6" d="M552.25,191.8a49.48,49.48,0,0,0-49.41,49.42h98.83A49.48,49.48,0,0,0,552.25,191.8Z"/><path class="cls-6" d="M552.35,186A55.35,55.35,0,0,0,497,241.22H607.68A55.35,55.35,0,0,0,552.35,186Z"/></g>
+	<g display="none" id="Layer_2" data-name="Layer 2"><text class="cls-7" transform="translate(547.18 181.61)">+ 10 %</text><text class="cls-7" transform="translate(547.18 176.43)">+ 20 %</text><text class="cls-7" transform="translate(547.18 170.9)">+ 30 %</text><text class="cls-7" transform="translate(547.18 165.24)">+ 40 %</text><text class="cls-7" transform="translate(547.18 160.09)">+ 50 %</text><text class="cls-7" transform="translate(547.18 154.46)">+ 60 %</text><text class="cls-7" transform="translate(547.18 149.27)">+ 70 %</text><text class="cls-7" transform="translate(547.18 143.75)">+ 80 %</text><text class="cls-7" transform="translate(547.18 138.08)">+ 90 %</text><text class="cls-7" transform="translate(546.29 132.09)">+ 100 %</text>
+			<line class="cls-8" x1="497.02" y1="123.75" x2="497.02" y2="241.14"/><line class="cls-8" x1="607.31" y1="123.75" x2="607.31" y2="241.14"/><line class="cls-8" x1="508.22" y1="123.74" x2="508.22" y2="241.14"/><line class="cls-8" x1="518.81" y1="123.74" x2="518.81" y2="241.14"/><line class="cls-8" x1="529.39" y1="123.74" x2="529.39" y2="241.14"/><line class="cls-8" x1="539.98" y1="123.74" x2="539.98" y2="241.14"/><line class="cls-9" x1="442.22" y1="123.75" x2="442.22" y2="241.14"/><line class="cls-8" x1="453.99" y1="123.74" x2="453.99" y2="241.14"/><line class="cls-8" x1="464.58" y1="123.74" x2="464.58" y2="241.14"/><line class="cls-8" x1="475.16" y1="123.74" x2="475.16" y2="241.14"/><line class="cls-8" x1="485.75" y1="123.74" x2="485.75" y2="241.14"/><line class="cls-8" x1="563.62" y1="123.74" x2="563.62" y2="241.14"/><polyline class="cls-8" points="551.75 123.75 551.75 132.83 551.75 241.14"/><line class="cls-8" x1="574.2" y1="123.74" x2="574.2" y2="241.14"/><line class="cls-8" x1="584.79" y1="123.74" x2="584.79" y2="241.14"/><line class="cls-8" x1="595.37" y1="123.74" x2="595.37" y2="241.14"/><line class="cls-9" x1="662.37" y1="123.75" x2="662.37" y2="241.14"/><line class="cls-8" x1="618.68" y1="123.74" x2="618.68" y2="241.14"/><line class="cls-8" x1="629.27" y1="123.74" x2="629.27" y2="241.14"/><line class="cls-8" x1="639.85" y1="123.74" x2="639.85" y2="241.14"/><line class="cls-8" x1="650.44" y1="123.74" x2="650.44" y2="241.14"/><g class="cls-10"><path class="cls-11" d="M491.61,240.78v.5h.5"/><line class="cls-12" x1="493.11" y1="241.28" x2="611.91" y2="241.28"/><path class="cls-11" d="M612.41,241.28h.5c0-.16,0-.33,0-.5"/><path class="cls-13" d="M612.89,239.78a60.65,60.65,0,0,0-121.27.5"/></g><g class="cls-10"><path class="cls-11" d="M486.42,240.78v.5h.5"/><line class="cls-14" x1="487.92" y1="241.28" x2="617.76" y2="241.28"/><path class="cls-11" d="M618.26,241.28h.5v-.5"/><path class="cls-15" d="M618.75,239.78a66.23,66.23,0,0,0-73.92-64.22l-.39,0a66.28,66.28,0,0,0-58,64.69"/></g><g class="cls-10"><path class="cls-11" d="M480.56,240.78v.5h.5"/><line class="cls-16" x1="482.06" y1="241.28" x2="622.96" y2="241.28"/><path class="cls-11" d="M623.46,241.28h.5c0-.16,0-.33,0-.5"/><path class="cls-17" d="M623.94,239.79a71.78,71.78,0,0,0-71.69-70.21,73.47,73.47,0,0,0-8.17.46,71.8,71.8,0,0,0-63.51,70.24"/></g><g class="cls-10"><path class="cls-11" d="M475.14,240.78v.5h.5"/><line class="cls-18" x1="476.64" y1="241.28" x2="628.38" y2="241.28"/><path class="cls-11" d="M628.88,241.28h.5v-.5"/><path class="cls-19" d="M629.36,239.78a77.2,77.2,0,0,0-77.11-75.62,76,76,0,0,0-7.88.4,77.21,77.21,0,0,0-69.22,75.72"/></g><g class="cls-10"><path class="cls-11" d="M469.82,240.78v.5h.5"/><line class="cls-20" x1="471.32" y1="241.28" x2="633.7" y2="241.28"/><path class="cls-11" d="M634.2,241.28h.5v-.5"/><path class="cls-21" d="M634.69,239.78a82.55,82.55,0,0,0-82.44-80.95q-4,0-7.91.38a82.55,82.55,0,0,0-74.52,81.07"/></g><g class="cls-10"><path class="cls-11" d="M464.59,240.78v.5h.5"/><line class="cls-22" x1="466.09" y1="241.28" x2="638.93" y2="241.28"/><path class="cls-11" d="M639.43,241.28h.5v-.5"/><path class="cls-23" d="M639.92,239.79a87.78,87.78,0,0,0-87.67-86.18c-2.7,0-5.38.12-8,.36a87.8,87.8,0,0,0-79.65,86.31"/></g><g class="cls-10"><path class="cls-11" d="M459.39,240.78v.5h.5"/><line class="cls-24" x1="460.89" y1="241.28" x2="644.13" y2="241.28"/><path class="cls-11" d="M644.63,241.28h.5c0-.16,0-.33,0-.5"/><path class="cls-25" d="M645.11,239.78a93,93,0,0,0-92.86-91.37c-2.7,0-5.38.11-8,.34a93,93,0,0,0-84.83,91.53"/></g><g class="cls-10"><path class="cls-11" d="M454,240.78v.5h.5"/><line class="cls-26" x1="455.54" y1="241.28" x2="649.48" y2="241.28"/><path class="cls-11" d="M650,241.28h.5v-.5"/><path class="cls-27" d="M650.47,239.78a98.34,98.34,0,0,0-98.23-96.72c-2.66,0-5.31.1-7.92.31a98.34,98.34,0,0,0-90.27,96.91"/></g><g class="cls-10"><path class="cls-11" d="M448.11,240.78v.5h.5"/><line class="cls-28" x1="449.61" y1="241.28" x2="655.41" y2="241.28"/><path class="cls-11" d="M655.91,241.28h.5v-.5"/><path class="cls-29" d="M656.4,239.79a104.3,104.3,0,0,0-96.14-102.36c-2.65-.2-5.32-.31-8-.31q-3.82,0-7.58.28a104.29,104.29,0,0,0-96.55,102.88"/></g><g class="cls-10"><path class="cls-11" d="M442.15,240.78v.5h.5"/><line class="cls-30" x1="443.65" y1="241.28" x2="661.37" y2="241.28"/><path class="cls-11" d="M661.87,241.28h.5v-.5"/><path class="cls-31" d="M662.36,239.78A110.25,110.25,0,0,0,552.24,131.16q-3.82,0-7.59.26a110.26,110.26,0,0,0-102.5,108.86"/></g><path class="cls-32" d="M552.25,186A55.31,55.31,0,0,0,497,241.22H607.5A55.32,55.32,0,0,0,552.25,186Z"/><path class="cls-32" d="M498.2,122.16c9.67-9.27,25.66-5,36.95-4.64a65.14,65.14,0,0,0,15.39-1.37l1.67-1.93,1.58,1.93a65.14,65.14,0,0,0,15.39,1.37c11.39-.32,27.55-4.7,37.2,4.88"/><polygon class="cls-2" points="607.68 123.75 604.89 122.66 606.3 121.06 607.68 123.75"/><polygon class="cls-2" points="496.8 123.39 499.6 122.3 498.19 120.7 496.8 123.39"/><text class="cls-33" transform="translate(507.65 109.79)">100%: Daily Recomended<tspan class="cls-34" x="70.54" y="0"> </tspan><tspan x="71.91" y="0">Amount </tspan></text></g><g id="Layer_3" data-name="Layer 3">
+			<line class="cls-35" data-toggle="popover" title="Pink food" data-trigger="hover" data-content="Sardines, Tuna, Salmon, Turkey Breast." x1="99.14" y1="123.92" x2="181.4" y2="123.92"/>
+			<line class="cls-36" data-toggle="popover" title="Orange food" data-trigger="hover" data-content="Pumpkin, Orange, Grapefruits, Carrots, Sweet Potatoes, Pumpkin Seeds, Papaya."
+			x1="99.14" y1="150.31" x2="181.4" y2="150.31"/>
+			<line class="cls-37" data-toggle="popover" title="Dark Red food" data-trigger="hover" data-content="Lean Jerky, Red Peppers, Hot Peppers."
+			x1="99.63" y1="110.72" x2="181.89" y2="110.72"/><line class="cls-38" data-toggle="popover" title="Light Pink food" data-trigger="hover" data-content="Trout, Watermelon, Shrimp."
+			x1="99.14" y1="137.11" x2="181.4" y2="137.11"/>
+			<line class="cls-39" data-toggle="popover" title="Light Yellow food" data-trigger="hover" data-content="Honey, Tumeric, Cashews, Oatmeal, Chickpeas, Barkkey." 
+			x1="99.14" y1="163.51" x2="181.4" y2="163.51"/><line class="cls-40" data-toggle="popover" title="Yellow food" data-trigger="hover" data-content="Butter, Lemons,  Potatoes, Lemons, Ginger, Bananas, Soybean, Pineapple." 
+			x1="99.14" y1="176.71" x2="181.4" y2="176.71"/>
+			<line class="cls-41" data-toggle="popover" title="Light Green food" data-trigger="hover" data-content="Avocado, Spinach, Green bean, Beans, Edamame, Okra, Grapes."
+			x1="99.14" y1="189.9" x2="181.4" y2="189.9"/>
+			<line class="cls-42" data-toggle="popover" title="Green food" data-trigger="hover" data-content="Olive oil, Grape seed oil, Seaweed, Kiwis, Kale, Collards, Broccoli, Green Tea, Cucumbers, Artichokes, Pistachios, Asparagus." 
+			x1="99.14" y1="203.1" x2="181.4" y2="203.1"/>
+			<line class="cls-43" data-toggle="popover" title="Blue Food" data-trigger="hover" data-content="Blueberries"
+			x1="99.14" y1="216.3" x2="181.4" y2="216.3"/>
+			<line class="cls-44" data-toggle="popover" title="Purple Food" data-trigger="hover" data-content="Red Wine, Beetroot, Eggplants"
+			x1="99.14" y1="229.5" x2="181.4" y2="229.5"/>
+			<line class="cls-45" data-toggle="popover" title="Light Brown Food" data-trigger="hover" data-content="Almond, Lentils, Hazelnut, Miso"
+			x1="99.14" y1="242.69" x2="181.4" y2="242.69"/>
+			<line class="cls-46" data-toggle="popover" title="Brown Food" data-trigger="hover" data-content="Walnut, Dark Chocolate, Miso"
+			x1="99.14" y1="255.89" x2="181.4" y2="255.89"/>
+			<line class="cls-47" data-toggle="popover" title="White Food" data-trigger="hover" data-content="Coconut oil, Mackerel, Anchovies, Yougurt, Eggs, Garlic, Cottage cheese, Tilapia, Scallops, Oyster"
+			x1="99.14" y1="269.09" x2="181.4" y2="269.09"/>
+			<line class="cls-48" data-toggle="popover" title="Red food" data-trigger="hover" data-content="Apples, Kimchi, Strawberries, Tomatoes, Pomegrante, Saffron, Raspberries, Raisin."
+			x1="100" y1="97.52" x2="182.26" y2="97.52"/></g><g id="Layer_4" data-name="Layer 4">
+					<text class="cls-49" transform="translate(199.02 127.34)">Pink</text><text class="cls-49" transform="translate(199.02 114.15)">Dark Red</text>
+					<text class="cls-49" transform="translate(199.02 139.68)">Light Pink</text><text class="cls-49" transform="translate(199.02 152.88)">Orange</text><text class="cls-49" transform="translate(199.02 165.56)">Light<tspan class="cls-50" x="15.18" y="0"> </tspan><tspan x="21.03" y="0">Yellow</tspan></text><text class="cls-49" transform="translate(199.02 179.53)"><tspan class="cls-51">Y</tspan><tspan x="4.03" y="0">ellow</tspan></text><text class="cls-49" transform="translate(199.02 193.97)">Light Green</text><text class="cls-49" transform="translate(199.02 206.65)">Green</text><text class="cls-49" transform="translate(199.02 220.65)">Blue</text><text class="cls-49" transform="translate(199.02 233.85)">Purple</text><text class="cls-49" transform="translate(199.02 245.88)">LIght Brown</text><text class="cls-49" transform="translate(199.02 258.45)">Brown</text><text class="cls-49" transform="translate(199.02 269.95)">White</text><text class="cls-49" transform="translate(199.02 101.1)">Red</text></g><g id="Layer_5" data-name="Layer 5"><circle class="cls-52" cx="118.09" cy="66.23" r="1.54"/><circle class="cls-52" cx="314.57" cy="66.23" r="1.54"/><circle class="cls-52" cx="502.83" cy="66.23" r="1.54"/></g><g id="Layer_6" data-name="Layer 6"><text class="cls-53" transform="translate(509.84 69.68)">Nutrition Units</text><text class="cls-53" transform="translate(124.64 69.68)">Food Color List</text><text class="cls-53" transform="translate(321.64 69.68)">Measurement</text><text class="cls-54" transform="translate(355.41 57.27)"></text></g></svg>
+
+</div>
+
+	<!-- 韩 -->
+<div class="visualization" id="visualization" style="background-color:#1A1A1A">
+	<div class="container">
+		<h3 class="title">Visualization</h3>
+		<p style="color:grey">
+			Each food contains a large amount of information, getting to know everything can never be easy. Now we choose 93 types of foods recommended for people with diabetes(relatively low GI level), and visualize the data.
+			Move your mouse cursor over every single element displayed in the visualization graph, feel free to <a href="http://lynnhan.me/PacificVis_2019/"><span class="affect"><u>Explore it Yourself</u></span></a>
+		</p>
+		
+	</div>
+</div>
+
+<div>
+	<iframe class="main" src="http://lynnhan.me/PacificVis_2019/" frameborder="0" scrolling="no"></iframe>
+</div>
+
+
+
+<div class="section4">
+	<div class="container">
+		<h3 class="title">Conclusion / Future Work</h3>
+		<div class="content">
+			<p>
+				Diabetes people are concerned with their diets. Our visualization work will assist them in finding the right food and arranging their each meals.
+			</p>
+			<p>
+				In the futue, we will continue our exploration of the connection between food and human body. Also, we will continue our data visualization in order to help more people find their suitable meal plan. <img src="images/smiley.png" height="30px">
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="about">
+	<div class="container">
+		<h3 class="title" id="contact">contact us</h3>
+		<div class="content">
+			<p>
+				This project is conducted by Olivia, Guojun and Ting together. If you have any questions, please don't hesitate to contact us!
+				Our email: han536@purdue.edu
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+	})
+</script>
+<script src="./hide.js"></script>
+<!-- <script type="text/javascript">
+	function toggle_div_fun(id) {
+
+		var divelement = document.getElementById(id);
+
+		if(divelement.style.display == 'none')
+			divelement.style.display == 'block';
+		else
+			divelement.style.display == 'none';
+	}
+</script> -->
+</body>
+</html>

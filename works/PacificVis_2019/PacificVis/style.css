@@ -1,0 +1,425 @@
+/*导航栏*/
+body{
+	min-width: 720px;
+}
+.navbar {
+	height: 70px;
+}
+
+.collapse {
+	text-transform: uppercase;
+}
+
+.navbar .navbar-brand {
+	font-size: 1.5em;
+	font-family: 'Oswald', sans-serif;
+}
+
+.navbar .navbar-collapse {
+	font-size: 0.8em;
+	font-family: 'Oswald', sans-serif;
+}
+
+.nav-item{
+	margin-right:20px;
+}
+
+.jumbotron {
+	height: 660px;
+	background-image: url("./images/Background1-02.jpg");
+	background-position: top;
+	background-size: cover;
+	border-radius: 0px;
+	text-align: center;
+}
+
+.display-4 {
+	color: black;
+	background-color: white;
+	margin-left: 29%;
+	margin-right: 29%;
+	margin-top: 100px;
+	padding-top: 10px;
+	padding-left:15px;
+	padding-right:15px;
+	font-size:33px;
+	padding-bottom: 10px;
+	font-family: 'Oswald';
+	font-weight: 500;
+}
+
+.jumbotron .lead {
+	margin-top: 50px;
+	margin-left: 10%;
+	margin-right: 10%;
+	color: white;
+	font-size: 1.1em;
+	background-color: rgba(0,0,0,0.3);
+	font-family: 'Roboto';
+	font-weight: 300;
+	padding:20px;
+	margin-bottom: 30px;
+}
+
+/*第一部分*/
+.section1 {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+.section1 .title {
+	font-family: 'Oswald';
+	padding-bottom: 20px;
+}
+
+.section1 .content {
+	font-family: 'Roboto';
+}
+
+/*第二部分*/
+.section2 {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+.section2 .title {
+	font-family: 'Oswald';
+	padding-bottom: 20px;
+}
+
+.section2 .content {
+	font-family: 'Roboto';
+}
+
+/*第三部分*/
+.section3 {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+.section-legend{
+	padding-top:50px;
+	padding-bottom:20px;
+	text-align: center;
+
+}
+
+.section3 .title {
+	font-family: 'Oswald';
+	padding-bottom: 20px;
+}
+
+.section3 .content {
+	font-family: 'Roboto';
+}
+
+/*visualization*/
+.visualization {
+	padding-top: 50px;
+	padding-bottom: 40px;
+
+	color: white;
+	background-color: rgb(65,65,65);
+	/* margin-top: 50px; */
+	/* margin-bottom: 100px; */
+	text-align: center;
+}
+
+.searchAndBasket{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+.visualization .title {
+	font-family: 'Oswald';
+
+}
+
+.visualization .content {
+	font-family: 'Roboto';
+}
+
+/*第四部分*/
+.section4 {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+.section4 .title {
+	font-family: 'Oswald';
+	padding-bottom: 20px;
+}
+
+.section4 .content {
+	font-family: 'Roboto';
+}
+
+
+
+
+.about {
+	height: 300px;
+	padding-top: 50px;
+	text-align: center;
+	color: lightgrey;
+	background-color: rgb(10,10,10);
+}
+
+.about .title {
+	font-family: 'Oswald';
+	text-transform: capitalize;
+	padding-bottom: 20px;
+}
+
+.about .content {
+	font-family: 'Roboto';
+}
+
+.number {
+	color: orange;
+	font-size: 2em;
+	font-weight: 700;
+}
+
+.food-icon {
+	opacity: 0.5;
+}
+
+.affect {
+	color: orange;
+	font-weight: 700;
+}
+
+.bubble-item {
+	margin: 10px 20px 10px 20px;
+}
+
+.bubble:nth-of-type(1) {
+	margin-top: 50px;
+}
+
+.bubble-item:hover {
+	transform: scale(1.1);
+}
+
+.left-align {
+	text-align: left;
+}
+
+.GI {
+	margin-top: 50px;
+	padding: 20px 0px 20px 0px;
+	border: 1px dashed grey;
+}
+
+.whatisgi {
+	font-size: 1.2em;
+}
+
+.video {
+	text-align: center;
+}
+video{
+	display: inline-block;
+}
+.legend-wrapper{
+	text-align: center;
+	margin:0px;
+	padding:0px;
+	background:#1A1A1A
+}
+h3.title{
+	margin-bottom:40px !important;
+	font-family:'Oswald';
+	
+}
+.section-legend{
+	background:#1A1A1A
+}
+.section-legend .container{
+	color:#fff;
+}
+.section-legend p{
+	color:grey;
+}
+
+iframe.legend{
+	width: 80%;
+	height:86vh;
+	margin:0 auto;
+	display:inline-block;
+	overflow: hidden;
+	box-sizing: border-box;
+	background:#1A1A1A;
+
+}
+iframe.main{
+	width: 100%;
+	height: 300vh;
+	display:block;
+	overflow: hidden;
+	box-sizing: border-box;
+
+}
+
+.searchAndBasket {
+	background-color: #1a1a1a;
+	padding-bottom: 50px;
+}
+.searchAndBasket .title {
+	font-family: 'Oswald';
+	/* padding-bottom: 20px; */
+	text-align: center;
+	color: white;
+}
+.searchAndBasket p {
+	font-family: 'Roboto';
+	text-align: center;
+	color: grey;
+	margin-bottom: 40px;
+}
+.searchAndBasket .searchhint {
+	font-family: 'Roboto';
+	text-align: left;
+	color:white;
+	margin-bottom: 0px;
+	margin-top: 5px;
+	font-size: 0.8em;
+}
+.searchbar {
+	margin-bottom: 20px;
+}
+.searchAndBasket .left {
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-right: 20px;
+	border: 1px dashed grey;
+	border-radius: 25px;
+}
+.searchAndBasket .left .eachline {
+	padding-top: 10px;
+}
+.searchAndBasket .left .eachline .btn {
+	margin-right: 5px;
+}
+
+.searchAndBasket .right {
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-left: 20px;
+	border: 1px dashed grey;
+	border-radius: 25px;
+	background: white;
+	position: relative;
+    box-sizing: border-box;
+    /* padding: 33px 53px; */
+    border-radius: 30px;
+    box-shadow: inset 0 5px 3px 0 rgba(255, 255, 255, 0.5), inset 0 -5px 3px 0 rgba(0, 0, 0, 0.78), inset 3px 0 2px 0 rgba(0, 0, 0, 0.25), inset -3px 0 2px 0 rgba(0, 0, 0, 0.25), inset 0 5px 46px 0 rgba(0, 0, 0, 0.4), 0 5px 13px 0 rgba(0, 0, 0, 0.75);
+}
+
+.right:before {
+	content: ' ';
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	left: 10px;
+	border-radius: 20px;
+	box-shadow: inset 0 0 4px 3px white, inset 0 8px 16px 4px rgba(0, 0, 0, 0.25);
+  }
+
+.right button {
+	display: block;
+	position: relative;
+}
+.right .eachline button {
+	display: block;
+	position: relative;
+}
+
+.searchAndBasket .right .eachline {
+	padding-top: 10px;
+}
+.searchAndBasket .right .eachline .btn {
+	margin-right: 5px;
+}
+#element1 {display:inline-block;} 
+#element2 {display:inline-block; margin-right:10px;}
+
+/* show and hide function */
+#data {
+	display: none;
+}
+#broccoli1 {
+	display: none;
+}
+#spinach1 {
+	display: none;
+}
+#kale1 {
+	display: none;
+}
+#collards1 {
+	display: none;
+}
+#califlower1 {
+	display: none;
+}
+#potatoes1 {
+	display: none;
+}
+#carrots1 {
+	display: none;
+}
+#cucumbers1 {
+	display: none;
+}
+#greenbean1 {
+	display: none;
+}
+#artichokes1 {
+	display: none;
+}
+#tomatoes1 {
+	display: none;
+}
+#redpeppers1 {
+	display: none;
+}
+#asparagus1 {
+	display: none;
+}
+#beetroot1 {
+	display: none;
+}
+#eggplants1 {
+	display: none;
+}
+#okra1 {
+	display: none;
+}
+@media screen and (max-width:1400px){
+	iframe.legend{
+		height:70vh;
+	}
+}
+@media screen and (max-width:1200px){
+	iframe.legend{
+		height:60vh;
+	}
+}
+@media screen and (max-width:1000px){
+	iframe.legend{
+		height:53vh;
+	}
+}
+@media screen and (max-width:850px){
+	iframe.legend{
+		height:44vh;
+	}
+}
