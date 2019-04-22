@@ -159,7 +159,21 @@
 }
 
 .col:hover {
-	background-color: #20B2AA;
+	background-color: white;
+}
+
+.works .row .col {
+	padding-left: 0;
+	padding-right: 0;
+	border-right: 1px solid gray;
+}
+
+.works .row .col .title {
+	padding-left: 10%;
+}
+
+.works .row .col .content {
+	padding-left: 10%;
 }
 
 
@@ -177,6 +191,12 @@
 	font-family: 'Raleway', sans-serif;
 	height: 600px;
 	background-color: black;
+}
+
+.blog .row .col {
+	padding-left: 0;
+	padding-right: 0;
+	border-right: 1px solid gray;
 }
 
 /* Contact me */
