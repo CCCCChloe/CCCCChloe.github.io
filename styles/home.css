@@ -155,7 +155,7 @@
 	color: white;
 	text-align: center;
 	font-size: 2em;
-	margin-top: 15%;
+	padding-top: 60%;
 }
 
 .col:hover {
@@ -165,7 +165,8 @@
 .works .row .col {
 	padding-left: 0;
 	padding-right: 0;
-	border-right: 1px solid gray;
+	/* border-radius: 20px; */
+	border: 3px solid white;
 }
 
 .works .row .col .title {
@@ -197,6 +198,21 @@
 	padding-left: 0;
 	padding-right: 0;
 	border-right: 1px solid gray;
+}
+
+.blog .more {
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	padding-top: 60%;
+}
+
+.blog .row .col .title {
+	padding-left: 10%;
+}
+
+.blog .row .col .content {
+	padding-left: 10%;
 }
 
 /* Contact me */
