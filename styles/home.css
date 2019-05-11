@@ -5,10 +5,6 @@
 	font-family: 'Lato';
 }
 
-.navbar .navbar-brand {
-	
-}
-
 .navbar .nav-item {
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
@@ -252,3 +248,4 @@
 hr {
 	width: 100px;
 }
+
