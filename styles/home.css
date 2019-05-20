@@ -284,3 +284,15 @@ hr {
 h5 {
 	padding-bottom: 20px;
 }
+
+.more_to_update {
+	font-size: 8.5rem;
+	margin-top: 60%;
+	color: #808080;
+	opacity: 0.2;
+	margin-left: 5%;
+}
+
+.b_line {
+	border-bottom: 10px solid black;
+}
