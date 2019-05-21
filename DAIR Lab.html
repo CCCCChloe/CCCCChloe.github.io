@@ -6,12 +6,18 @@
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="styles/home.css">
 	<link rel="stylesheet" type="text/css" href="styles/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="styles/lab.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<!-- Fonts -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Raleway" rel="stylesheet">
 	<!-- JavaScript -->
 	<script type="text/javascript" src="scripts/effects.js"></script>
+
+	<!-- show my code -->
+	<link rel="stylesheet" href="highlight/styles/hybrid.css">
+	<script src="highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 
@@ -98,32 +104,356 @@
 	</div>
 
 	<!-- explain -->
-	<div class="container" style="margin-top: 200px;color:white; background-color: black;text-align: center;">
-		<h4>According to data privacy, I only list some of my works in the lab below.</h4>
+	<div class="container" style="margin-top: 200px;color:white; background-color: rgb(148, 148, 148);text-align: center;">
+		<h4>According to data privacy, I only list some of my lab works below.</h4>
 	</div>
 
 
 	<!-- video -->
 	<div class="video" id="video" style="text-align:center; margin-top:80px;background-color: black; height: 900px; color: white;">
-		<iframe style="margin-top:30px;" width="1280" height="720" src="https://www.youtube.com/embed/EM6ku1h7wsE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe style="margin-top:30px;" width="1280" height="720" src="https://www.youtube.com/embed/7k-psThOifs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<p style="margin-top:30px;">We scale the size of the character to test children's reaction towards these changes.</p>
 	</div>
 
 	<!-- model and animation -->
-	<div class="model container" style="text-align:center; height: 900px;">
-		<img src="" alt="">
-		<p>There are some models and animations that I build for the unity envrionment.</p>
+	<div class="model container" style="text-align:center; margin-top: 100px;">
+		<h4>Model and Animation</h4>
+		<p>There are some models and animations that I build from scratch for the unity envrionment.</p>
+		<div style="margin-bottom: 50px;">
+			<img src="works/DAIR Lab/model_1.png" alt="" width="100%;">
+		</div>
+		<div style="margin-bottom: 50px;">
+			<img src="works/DAIR Lab/model_2.png" alt="" width="100%;">
+		</div>
+		<div style="margin-bottom: 50px;">
+			<img src="works/DAIR Lab/model_3.png" alt="" width="100%;">
+		</div>
+
+	</div>
+
+	
+
+	<!-- Code -->
+	<div class="code" style="margin-top: 100px;">
+		<div style="text-align: center;">
+			<h3>Billboarding script for all prefabs</h3>
+		</div>
+		
+		<pre><code class="C#">
+			using System.Collections;
+			using System.Collections.Generic;
+			using UnityEngine;
+
+			public class CameraFacingBillboard : MonoBehaviour
+			{
+				private Camera m_Camera;
+
+				private void Start()
+				{
+					m_Camera = GameObject.Find("CenterEyeAnchor").GetComponent<Camera>();
+				}
+				
+				void LateUpdate()
+				{
+					Vector3 v = m_Camera.transform.position - transform.position;
+					v.x = v.z = 0.0f;
+					transform.LookAt(m_Camera.transform.position - v);
+					// transform.LookAt(transform.position - m_Camera.transform.rotation * Vector3.forward, m_Camera.transform.rotation * Vector3.up);
+
+				}
+			}
+		</code></pre>
+
+		<div style="text-align: center;">
+			<h3>Script for game play</h3>
+		</div>
+
+		<div style="width:100%;height:600px;overflow:scroll;">
+			
+		<pre><code class="C#">
+			using System.Collections;
+			using System.Collections.Generic;
+			using UnityEngine;
+			using System.IO;
+			using System;
+			using UnityEngine.UI;
+			
+			public class myPlayerController : MonoBehaviour
+			{
+				public GameObject camera;
+				private float x, y, z;
+				private float yaw, pitch, roll;
+				private GameObject b_sphere, y_sphere, r_sphere;
+				public GameObject[] charaArray;
+				public Vector3[] positionArray = new Vector3[3];
+				private Vector3 temp;
+				private Vector3 size;
+				private Vector3 blue, yellow, red;
+				static private Vector3 ballsize;
+				private float percentage;
+				string path;
+				private static string id;
+				private GameObject globalObject;
+				private List<GameObject> newobject = new List<GameObject>();
+				private float speed = 1.5f;
+				static private Boolean hasCharaInScene = false;
+				private int counter = 0;
+				private string condition;
+				private StreamWriter writer;
+				public float heightPara;
+			
+				//public InputField mainInputField;
+			
+			
+				// Start is called before the first frame update
+				void Start()
+				{
+					b_sphere = GameObject.Find("Sphere_blue");
+					y_sphere = GameObject.Find("Sphere_yellow");
+					r_sphere = GameObject.Find("Sphere_red");
+			
+					
+					//Find the global object
+					globalObject = GameObject.Find("globalObject");
+					// Fetch the ID and condition using prefab
+					id = PlayerPrefs.GetString("ID");
+					condition = PlayerPrefs.GetString("condition");
+					Debug.Log("condition:" + condition);
+					Debug.Log("***ID=" + id);
+					path = string.Format(@"C:\Users\tp24269\Desktop\data\{0}.txt", id);
+			
+					//Write to the csv file
+					writer = new StreamWriter(path, true);
+					writer.WriteLine("{0}", condition);
+					for (int j = 0; j < positionArray.Length; j++)
+					{
+						writer.WriteLine("{0} ", charaArray[j]);
+					}
+					blue = b_sphere.transform.position;
+					yellow = y_sphere.transform.position;
+					red = r_sphere.transform.position;
+					writer.WriteLine("{0}, {1} , {2} ", blue, yellow, red);
+				}
+			
+				// Update is called once per frame
+				void Update()
+				{
+					//open a csv file
+					x = camera.transform.position.x;
+					y = camera.transform.position.y;
+					z = camera.transform.position.z;
+					yaw = camera.transform.rotation.z;
+					pitch = camera.transform.rotation.y;
+					roll = camera.transform.rotation.x;
+					//The order for writing into the data file 
+					string timestamp = DateTime.Now.ToString();
+				   
+			
+					//write to csv
+					writer.WriteLine("{0}, {1},  {2}, {3} , {4} , {5} , {6} ", timestamp, x, y, z, yaw, pitch, roll);
+			
+					//close the file
+					//writer.Close();
+			
+			
+					//Debug.Log("YAW = " + yaw);
+			
+					if (condition == "Condition A")
+					{
+						//Debug.Log("***Condition A***");
+						if (Input.GetKeyDown("1")) {
+							charaAppear();
+							percentage = y / heightPara;
+							counter++;
+						}
+						if (Input.GetKeyDown("2")) {
+							newobject.Clear();
+							charaAppear();
+							percentage = y / (heightPara*2);
+							counter++;
+						}
+						if (Input.GetKeyDown("3"))
+						{
+							newobject.Clear();
+							charaAppear();
+							percentage = y / (heightPara/2);
+							counter++;
+						}
+					}
+					else if (condition == "Condition B") {
+						//Debug.Log("***Condition B***");
+						if (Input.GetKeyDown("1"))
+						{
+							charaAppear();
+							percentage = y / heightPara;
+							counter++;
+						}
+						if (Input.GetKeyDown("2"))
+						{
+							newobject.Clear();
+							charaAppear();
+							percentage = y / (heightPara/2);
+							counter++;
+						}
+						if (Input.GetKeyDown("3"))
+						{
+							newobject.Clear();
+							charaAppear();
+							percentage = y / (heightPara*2);
+							counter++;
+						}
+					}
+			
+					if (Input.GetKeyDown("s"))
+					{
+						y = camera.transform.position.y;
+						Debug.Log("y = " + y);
+					}
+			
+					if (hasCharaInScene)
+						grow(percentage);
+			
+					if (Input.GetKeyDown("d"))
+					{
+						hasCharaInScene = false;
+			
+					}
+			
+					if (!hasCharaInScene)
+					{
+						grow(0);
+						
+						if (counter != 0 && newobject[0].transform.localScale.y <= ballsize.y)
+						{
+							b_sphere.gameObject.SetActive(true);
+							y_sphere.gameObject.SetActive(true);
+							r_sphere.gameObject.SetActive(true);
+							
+						}
+						if (counter != 0 && newobject[0].transform.localScale.y == 0)
+						{
+							for (int i = 0; i < positionArray.Length; i++)
+							{
+								Destroy(newobject[i]);
+							}
+						}
+						//newobject.Clear();
+					}
+			
+				}
+			
+				private void charaAppear()
+				{
+					//if (Input.GetKeyDown("space"))
+					//{
+					b_sphere.gameObject.SetActive(false);
+					y_sphere.gameObject.SetActive(false);
+					r_sphere.gameObject.SetActive(false);
+			
+					for (int i = positionArray.Length - 1; i > 0; i--)
+					{
+						int index = UnityEngine.Random.Range(0, i + 1); //random integer index such that 0 <= index <= 1
+																		//switch
+						if (i != index)
+						{
+							temp = positionArray[i];
+							positionArray[i] = positionArray[index];
+							positionArray[index] = temp;
+						}
+					}
+					for (int j = 0; j < positionArray.Length; j++)
+					{
+						newobject.Add(Instantiate(charaArray[j], positionArray[j], charaArray[j].transform.rotation));
+						ballsize = b_sphere.transform.localScale;
+						newobject[j].transform.localScale = ballsize;
+			
+			
+						//size.x = (charaArray[j].transform.localScale.x * percentage);
+						//size.y = (charaArray[j].transform.localScale.y * percentage);
+						//size.z = (charaArray[j].transform.localScale.z * percentage);
+						//newobject[j].transform.localScale = size;
+					}
+					//}
+			
+			
+					hasCharaInScene = true;
+			
+				}
+			
+				private void grow(float percentage)
+				{
+					size = charaArray[0].transform.localScale * percentage;
+			
+			
+					for (int i = 0; i < newobject.Count; i++)
+					{
+						//newobject[i].transform.localScale = Vector3.Lerp(newobject[i].transform.localScale, size, speed * Time.deltaTime);
+						if (i <= 1)
+						{
+							newobject[i].transform.localScale = Vector3.Lerp(newobject[i].transform.localScale, size, speed * Time.deltaTime);
+						} else
+						{
+							newobject[i].transform.localScale = Vector3.Lerp(newobject[i].transform.localScale, size * 1.2f, speed * Time.deltaTime);
+						}
+			
+					}
+			
+					//newobject[0].transform.localScale = Vector3.Lerp(newobject[0].transform.localScale, size, speed * Time.deltaTime);
+					//newobject[1].transform.localScale = Vector3.Lerp(newobject[1].transform.localScale, size, speed * Time.deltaTime);
+					//newobject[2].transform.localScale = Vector3.Lerp(newobject[2].transform.localScale, size * 1.2f, speed * Time.deltaTime);
+			
+				}
+			
+				private void OnDestroy()
+				{
+					writer.Close();
+				}
+			
+			}
+			
+		</code></pre>
+		</div>
 	</div>
 
 	<!-- FaceGen -->
-	<div class="facegen" style="background-color:black; text-align:center;color:white; height: 900px;">
-		<img src="" alt="">
-		<p>This is a side project that I have done that using FaceGen to generate avatars and test people's reaction towards their own avatar.</p>
+	<div class="facegen" style="text-align:center; margin-top: 200px; margin-left: 8%; margin-bottom: 300px;">
+		<h4>Avatar Side Project</h4>
+		<p style="margin-top: 25px;">This is a side project that I conducted using FaceGen to generate avatars and test people's reaction towards their own avatar.</p>
+		<!-- <img src="works/DAIR Lab/FaceGen_1.png" alt="" style="width:40%;">
+		<img src="works/DAIR Lab/FaceGen_2.png" alt="" style="width:22%;">
+		<img src="works/DAIR Lab/FaceGen_3.png" alt="" style="width:22%;"> -->
+		<figure class="figure" style="width:40%; margin-right: 2%;">
+			<img src="works/DAIR Lab/FaceGen_1.png" alt="Trulli" style="width:100%;">
+			<figcaption>Step1: upload pictures and generate avatar.</figcaption>
+		</figure>
+		<figure class="figure" style="width:22%; margin-right: 2%;">
+			<img src="works/DAIR Lab/FaceGen_2.png" alt="Trulli" style="width:98%;">
+			<figcaption>Step2: modify demographics feature.</figcaption>
+		</figure>
+		<figure class="figure" style="width:22%; margin-right: 10%">
+			<img src="works/DAIR Lab/FaceGen_3.png" alt="Trulli" style="width:98%;">
+			<figcaption>Step3: add model sets.</figcaption>
+		</figure>
+
+	</div><p style="opacity: 0;">
+		contact me
+	</p>
+
+	<div class="container">
+		<h5>FaceGen feedback</h5>
+		<p>1.	The photo quality matters. We need to make sure the light is right when taking the photo, otherwise it will change avatar’s skin color. Also we need to make sure no hair covers part of the face. Profile photo could be a good option.</p>
+		<p>2.	Current Hairstyle options in FaceGen cannot satisfy their needs and some of them look weird.</p>
+		<p>3.	Gender feature is not that obvious. Some female participants say their model looks like female without hair.</p>
+		<p>4.	People usually see their reflections in the mirror. The 3D model is a little bit different to their perception, but it’s still acceptable.</p>
+		<p>5.	Most participants have positive feeling towards their 3D models. Although there are some deficiencies like the nose part is dark from the front view, they still think the models look similar to real person.</p>
 	</div>
+
 	
+
 
 	<!-- Contact me -->
 	<div class="contact">
+		
 		<p>
 			Contact Me
 		</p>
@@ -142,6 +472,7 @@
 		</div>
 		
 	</div>
+
 
 	<!-- Copyright -->
 	<div class="ending">
