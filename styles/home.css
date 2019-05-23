@@ -277,7 +277,7 @@ hr {
 }
 
 
-.col:hover .overlay {
+.col-lg-4:hover .overlay {
 	opacity: 1;
 }
 
