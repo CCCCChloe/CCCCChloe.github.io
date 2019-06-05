@@ -276,6 +276,15 @@ hr {
 	text-align: center;
 }
 
+.text p {
+	font-size: 1rem;
+}
+
+.btn {
+	margin-top: 5%;
+	border-radius: 30px !important;
+}
+
 
 .col-lg-4:hover .overlay {
 	opacity: 1;
